@@ -1,0 +1,38 @@
+name: Deploy Dynamic Website to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Adjust this if you use a different branch for your main development
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Use the Node.js version compatible with your project
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build the site
+        # Adjust the build command to match your project setup
+      - name: Build the site
+        run: npm run build
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages  # You can choose the branch for GitHub Pages deployment
+          publish_dir: ./build  # Ensure this points to the directory with your build output
