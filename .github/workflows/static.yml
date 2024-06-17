@@ -10,3 +10,11 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.13.2'
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
