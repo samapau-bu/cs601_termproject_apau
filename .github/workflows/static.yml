@@ -13,8 +13,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16.13.2'
-
-      - name: Install and Build 🔧
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+      - name: Install and Build 
         run: |
           npm ci
           npm run build
