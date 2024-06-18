@@ -2,8 +2,11 @@
 
 # Portfolio Website
 
-[[![Build Status]((https://github.com/samapau-bu/cs601_termproject_apau/actions/runs/9559371926)
-Portfolio website hosted on github link: https://samapau-bu.github.io/cs601_termproject_apau/
+[[![Build Status]
+https://github.com/samapau-bu/cs601_termproject_apau/actions/runs/9559371926
+
+Portfolio website hosted on github link: 
+https://samapau-bu.github.io/cs601_termproject_apau/
 
 A brief description of your portfolio website.
 
@@ -41,11 +44,15 @@ Provide an overview of your portfolio website. Explain what it showcases and its
 
 ### Features
 List the key features of your portfolio website.
+- CSS Flexbox to display the four projects on the portfolio page
+- Contact Form (Document Object Model (DOM))
+- Project buttons using TypeScript in React
+- Drag and Drop
 
 ### Live Demo
 Provide a link to a live demo of your website.
 
-[Live Demo](http://yourportfolio.com)
+[Live Demo](http://yourportfolio.com)- To be Added
 
 ### Screenshots
 Include screenshots or gifs to give a visual representation of your portfolio.
@@ -68,10 +75,14 @@ List the main technologies and frameworks used to build your portfolio website.
 Instructions on how to install and set up your portfolio website locally.
 
 ### Prerequisites
-List any prerequisites or dependencies required before installing your project.
 
-```sh
-# Example prerequisite installation
-sudo apt-get install -y nodejs npm
+- Install webstorm 
+-	Install npm
+    -	npm install
+-	 Add npm to your path
+-	Install nodejs
+    - npm add nodejs”
+- Add nodejs to your path
+
 
 
